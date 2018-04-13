@@ -5,8 +5,8 @@
         <img src="../assets/pic/logo2.jpg"/>
       </div>
       <div style="text-align: right">
-        <el-button>登录</el-button>
-        <el-button>注册</el-button>
+        <el-button @click="Login">登录</el-button>
+        <el-button @click="Register">注册</el-button>
       </div>
     </el-header>
     <el-main style="margin-top: 50px">
@@ -58,7 +58,15 @@
           },
         ],
       }
-    }
+    },
+    methods:{
+      Login:function () {
+        this.$router.push({path: "/login"});
+      },
+      Register:function () {
+        this.$router.push({path: "/register"});
+      }
+    },
   }
 </script>
 
