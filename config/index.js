@@ -4,19 +4,20 @@
 
 const path = require('path')
 
+const api_host = 'http://localhost:8088';
+
 module.exports = {
   dev: {
 
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {"/front/article/queryDetail":{
-      target: 'http://localhost:8088/',  // 接口域名
-      changeOrigin: true,  //是否跨域
-      pathRewrite: {
-        '^/apis': ''   //需要rewrite重写的,
-      }
-    }},
+    proxyTable: {
+      '*': {
+        target: api_host, //目标url地址
+        changeOrigin: true, //指示是否跨域
+      },
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8888, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined

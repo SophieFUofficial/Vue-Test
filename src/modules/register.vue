@@ -45,7 +45,7 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import Axios from '../common/axios'
 
   export default {
     data () {
@@ -94,8 +94,12 @@
         params.password = password;
         params.confirmPassword = confirmPassword;
         params.phone = phone;
-        axios.post("/login/register",params).then(res =>{
-          alert("success")
+        Axios.axiosPost("/login/register",params).then(res =>{
+          if(res.rescode == 200){
+
+
+            this.$router.push({path: "/main"});
+          }
         },error =>{
           alert("fail")
         })
