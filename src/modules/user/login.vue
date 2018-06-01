@@ -2,7 +2,7 @@
   <el-container style="height: 800px; border: 1px solid #eee">
     <el-header style="font-size: 12px">
       <div style="text-align: left">
-        <img src="../assets/pic/logo2.jpg"/>
+        <img src="../../assets/pic/logo2.jpg"/>
       </div>
     </el-header>
     <el-main style="margin-top: 50px">

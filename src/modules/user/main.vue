@@ -2,7 +2,7 @@
   <el-container style="height: 800px; border: 1px solid #eee">
     <el-header style="font-size: 12px">
       <div style="text-align: left">
-        <img src="../assets/pic/logo2.jpg"/>
+        <img src="../../assets/pic/logo2.jpg"/>
       </div>
       <div style="text-align: right">
         <el-button @click="Login">登录</el-button>
@@ -21,11 +21,11 @@
 </template>
 
 <script>
-  import pic1 from '../assets/pic/pic1.jpg'
-  import pic2 from '../assets/pic/pic2.jpg'
-  import pic3 from '../assets/pic/pic3.jpg'
-  import pic4 from '../assets/pic/pic4.jpg'
-  import pic5 from '../assets/pic/pic5.jpg'
+  import pic1 from '../../assets/pic/pic1.jpg'
+  import pic2 from '../../assets/pic/pic2.jpg'
+  import pic3 from '../../assets/pic/pic3.jpg'
+  import pic4 from '../../assets/pic/pic4.jpg'
+  import pic5 from '../../assets/pic/pic5.jpg'
 
   export default {
     data () {

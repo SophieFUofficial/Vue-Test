@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '../modules/main.vue'
-import Login from '../modules/login.vue'
-import Register from '../modules/register.vue'
+import Main from '../modules/user/main.vue'
+import Login from '../modules/user/login.vue'
+import Register from '../modules/user/register.vue'
 
 
 
